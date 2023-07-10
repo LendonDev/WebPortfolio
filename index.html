@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head of the page-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="language" content="en">
+  <meta name="title" content="Lewis Lendon | Developer & Designer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.lendondev.co.uk/">
+  <meta property="og:title" content="Lewis Lendon | Developer & Designer">
+  <meta property="og:description" content="Welcome to the online portfolio of mine, showcasing the many things I can do.">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://www.lendondev.co.uk/">
+  <meta property="twitter:title" content="Lewis Lendon | Developer & Designer">
+  <meta property="twitter:description" content="Welcome to the online portfolio of mine, showcasing the many things I can do.">
+  <meta property="twitter:image" content="https://www.lendondev.co.uk/images/META IAMGE HEREREREE!!!.png">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="revisit-after" content="1 day">
+  <meta name="author" content="Lewis Lendon">
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.min.js"></script>
+  <script src="https://kit.fontawesome.com/0c35bf48b1.js" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="javascript.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="http://www.lendondev.co.uk/favicon.ico">
+  <title>Lewis Lendon | Web Developer</title>
+</head>
+<!--END of Head of the page-->
+
+
+
+<!--START of the Body of the page-->
+<body style="overflow-y:auto;">
+
+<div class="loaderanim1" id="loaderanim1"></div>
+<div class="loaderanim2" id="loaderanim2"></div>
+
+<div class="modal-main-container">
+  <dialog class="modal-main" id="modal-main" aria-hidden="true">
+
+    <div class="modal-header">
+      <div class="modal-title-container">
+        <h1 class="modal__title" style="width:auto">Got Feedback?</h1>
+        <p class="modal__subtitle">Any queries, bugs, issues - Feel free to report them here.</p>
+      </div>
+        <button class="modal-close close-button" id="button-modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="modal-body">
+      <p class="modal__default-text">Type your message below</p>
+      <div class="modal__textarea-main">
+        <textarea class="form__item-textarea" name="message" id="message" rows="5"></textarea>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="button-modal" type="button">Confirm</button>
+      <button class="button-modal cancel">Cancel</button>
+    </div>
+
+
+  </dialog>
+</div>
+
+<a name="home-anchorpoint"></a> 
+<div class="main-page-container" id="mainpagecontainer">
+  
+
+<div class="update-version-container">
+  <p style="font-size: 12px;margin:0px;">Portfolio Version</p>
+  <lb>
+    <h3 style="margin:0;color: var(--brand-color);">First Ever Portfolio</h3>
+  <lb>
+  <p style="font-size: 12px;margin:0px">v 1.0 - pre-release</p>
+</div>
+
+
+<div class="navbar-main-container">
+  <div class="navbar-main-logo">
+    <img style="width: 70px;" src="content/logoidea.png">
+  </div>
+  <div style="margin-left: auto;"class="navbar-link-button">
+    <a class="nav" href="#home-anchorpoint">Home</a>
+  </div>
+  <div class="navbar-link-button">
+    <a class="nav" href="#aboutme-anchorpoint">About Me</a>
+  </div>
+  <div class="navbar-link-button">
+    <a class="nav" href="#projects-anchorpoint">Projects</a>
+  </div>
+  <div class="navbar-link-button">
+    <a class="nav" href="#updatelog-anchorpoint">Update Log</a>
+  </div>
+  <div style="border-right:var(--brand-color) 4px solid;padding-right:40px"class="navbar-link-button">
+    <a class="nav" href="#contactme-anchorpoint">Contact Me</a>
+  </div>
+</div>
+
+<div class="navbar-smallscreen-container">
+  <button class="navbar-smallscreen-button" id="navbar-button">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</div>
+
+<div class="nav-menu-mobile-main" id="active">
+
+</div>
+
+
+
+
+<div class="title-main-container">
+  <div class="title-container">
+    <div class="main-title-image"data-aos="fade-right">
+      <img style="max-width: 500px;padding: 20px;"src="content/place_holder.png" class="img-fluid" alt="Lewis">
+    </div>
+    
+    <div class="main-title-introduction">
+      <div class="text-container"data-aos="fade-left">
+        <h1>Hi, I'm Lewis, Web Developer & Designer hailing from the UK.</h1>
+        <p>Hey, I'm <span style="color: var(--brand-color);margin-block-start: 0;">Lewis</span>, raised in <span style="color: var(--brand-color);">Manchester, England.</span> I'm a keen developer who always wants to learn, If you are interested in getting to work with me, please do so using the button below.</p>
+
+        <div class="intro-statistics-container">
+          <div class="intro-statistic">
+            <p>Projects</p>
+            <h3 style="font-size: 24px;">30+</h3>
+          </div>
+          <div style="margin-left: 32px;"class="intro-statistic">
+            <p>Experience</p>
+            <h3 style="font-size: 24px;">4+ yrs</h3>
+          </div>
+          <div style="margin-left: 32px;"class="intro-statistic">
+            <p>Country</p>
+            <h3 style="font-size: 24px;">ENG<img style="max-width: 26px;margin-left: 16px;" src="content/england.png"></h3>
+          </div>
+        </div>
+        
+        <button class="button-contact-me"id="contactbutton"href="#contactme-anchorpoint">Contact Me</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="social-links-container">
+
+    <a class="socials" target="_blank" href="https://github.com/ItzProvi">
+      <div class="social-link"><i class="fa fa-github" aria-hidden="true"></i></div>
+    </a> 
+
+    <a class="socials" target="_blank" href="https://www.linkedin.com/in/lewis-lendon-1baa01202/">
+      <div class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+    </a>
+
+    <a class="socials" target="_blank" href="index.html">
+      <div class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+    </a>
+
+    <a class="socials" target="_blank" href="index.html">
+      <div class="social-link"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+    </a>
+
+  </div>
+
+</div>
+
+
+<a name="aboutme-anchorpoint"></a> 
+<div class="about-me-main-container">
+  <div class="about-me-container">
+    <div class="text-container"data-aos="fade-right">
+      <h2>- About Me</h2>
+      <h1>Get to know me!</h1>
+      <p>I'm an avid PC enthusiast, and I'm always happy when using one, hence why I spend so much time on mine. I've been interested in computing since I was first introduced at a young age.</p>
+
+      <p>I have been coding since I was in school (2018), using:</p>
+      <p style="margin-top: 200px;">...And hoping to learn much more!</p>
+    </div>
+
+
+
+
+
+
+  <div class="about-me-banners-container"data-aos="fade-left">
+    <div class="banner"><i class="fa-brands fa-html5"></i></div>
+    <div class="banner"><i class="fa-brands fa-css3-alt"></i></div>
+    <div class="banner"><i class="fa-brands fa-js"></i></div>
+    <div class="banner"><i class="fa-brands fa-bootstrap"></i></div>
+    <div class="banner"></div>
+    <div class="banner"></div>
+    <div class="banner"></div>
+    <div class="banner"></div>
+    <div class="banner"></div>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+<a name="projects-anchorpoint"></a> 
+<div class="projects-main-container">
+  <div class="projects-container">
+
+
+    <div class="projects-introduction">
+    <div style="text-align: end;"class="text-container"data-aos="fade-left">
+      <h2>Projects -</h2>
+      <h1>My Projects.</h1>
+      <p>This is some of the work I have developed and designed over the years, using my self-taught knowledge and creativeness over my programming journey.</p>
+      <p style="margin-bottom: 32px;">All assets and designs present on these webpage are of my own personal work and creativity, and some maybe subject to be copyrighted imagery and branding.</p>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="projects-main-display-container" data-aos="fade-right">
+
+
+      <a class="projects" href="index.html">
+      <div class="project">
+        <div class="project-image"><i style="font-size: 42px;"class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="project-info">
+          <h3 style="margin: 0;">Artist Website/Forum</h3>
+          <p>NOT AVAILABLE RIGHT NOW. </p>
+        </div>
+      </div>
+    </a>
+
+    <a class="projects" href="index.html">
+      <div class="project">
+        <div class="project-image"><i style="font-size: 42px;"class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="project-info">
+          <h3 style="margin: 0;">Calculator Web-App</h3>
+          <p>NOT AVAILABLE RIGHT NOW.</p>
+        </div>
+      </div>
+    </a>
+
+    <a class="projects" href="index.html">
+      <div class="project">
+        <div class="project-image"><i style="font-size: 42px;"class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="project-info">
+          <h3 style="margin: 0;">Online E-Commerce Marketplace</h3>
+          <p>NOT AVAILABLE RIGHT NOW.</p>
+        </div>
+      </div>
+    </a>
+
+    <a class="projects" href="index.html">
+      <div class="project">
+        <div class="project-image"><i style="font-size: 42px;"class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="project-info">
+          <h3 style="margin: 0;">API Agregator App</h3>
+          <p>NOT AVAILABLE RIGHT NOW.</p>
+        </div>
+      </div>
+    </a>
+
+    <a class="projects" href="index.html">
+      <div class="project">
+        <div class="project-image"><i style="font-size: 42px;"class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="project-info">
+          <h3 style="margin: 0;">Online Spotify clone</h3>
+          <p>NOT AVAILABLE RIGHT NOW.</p>
+        </div>
+      </div>
+    </a>
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="updatelog-anchorpoint"></a> 
+<div class="update-log-main-container">
+  <div class="update-log-container">
+
+    <div class="update-log-introduction">
+      <div class="text-container"data-aos="fade-right">
+        <h2>- Update Log</h2>
+        <h1>Website Progression.</h1>
+        <p>This is where I record all the changes I make to this website, also including additions that will be added in the future, a lot of this is dependant on user feedback. Which you can always add any changes you think will improve the website.</p>
+        <p>Submit Feedback Here:</p>
+        <button class="button-contact-me open-button" id="open-modal-button">Submit Feedback</button>
+      </div>
+    </div>
+
+
+
+    <div class="update-log-main"data-aos="fade-left">
+
+      <div class="update-log-legend">
+        <div class="update-log-item">
+          <i class="fa-solid fa-ellipsis"></i> <p style="margin-left:8px;">Not Started.</p>
+        </div>
+
+        <div class="update-log-item">
+          <i class="fa-solid fa-wrench"></i><p style="margin-left:8px;">In Development.</p>
+        </div>
+
+        <div class="update-log-item">
+          <i class="fa-solid fa-check"></i><p style="margin-left:8px;">Completed/Released.</p>
+        </div>
+
+      </div>
+
+      <div class="update-log-grid-container">
+
+        <div class="update-log-row-header">
+            <div class="update-log-status"><p style="color:var(--white-color)">Status</p></div>
+            <div class="update-log-task"><p style="color:var(--white-color)">Task</p></div>
+        </div>
+
+
+        <div class="update-log-row">
+            <div class="update-log-status"><p><i style="color:var(--brand-color)"class="fa-solid fa-check"></i></p></div>
+            <div class="update-log-task"><p>Publish and Host website.</p></div>
+        </div>
+
+
+        <div class="update-log-row">
+          <div class="update-log-status"><p><i style="color:var(--brand-color)"class="fa-solid fa-check"></i></p></div>
+          <div class="update-log-task"><p>Design and Develop Website.</p></div>
+        </div>
+
+
+      <div class="update-log-row">
+        <div class="update-log-status"><p><i class="fa-solid fa-ellipsis"></i></div>
+        <div class="update-log-task"><p>N/A</p></div>
+      </div>
+
+
+      <div class="update-log-row">
+        <div class="update-log-status"><p><i class="fa-solid fa-ellipsis"></i></p></div>
+        <div class="update-log-task"><p>N/A</p></div>
+      </div>
+
+
+      <div class="update-log-row">
+        <div class="update-log-status"><p><i class="fa-solid fa-ellipsis"></i></p></div>
+        <div class="update-log-task"><p>N/A</p></div>
+      </div>
+
+
+      <div class="update-log-row">
+        <div class="update-log-status"><p><i class="fa-solid fa-ellipsis"></i></p></div>
+        <div class="update-log-task"><p>N/A</p></div>
+      </div>
+
+
+      <div class="update-log-row">
+        <div class="update-log-status"><p><i class="fa-solid fa-ellipsis"></i></p></div>
+        <div class="update-log-task"><p>N/A</p></div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="contactme-anchorpoint"></a> 
+<div class="contact-me-main-container">
+  <div class="contact-me-container">
+    
+
+
+
+
+
+
+    <div class="contact-me-main-display-container"data-aos="fade-right">
+
+      <div class="contact-me-main-display">
+
+
+
+        <div class="contact-me-option">
+          <div class="contact-me-icon-holder"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-me-text-holder">
+            <a href="mailto:lewis.lendon@gmail.com?"class="socials"style="font-size:1.2rem;">lendondev@gmail.com</p></a>
+          </div>
+        </div>
+  
+        <form>
+            <div class="form-container">
+              <div class="form-input">
+              <h1 class="modal__title">Email Address:</h1>
+              <p class="modal__subtitle">Enter your email-address so I can get in touch.</p>
+              <input type="email" class="form__item-textarea" id="InputEmail" aria-describedby="emailHelp" placeholder="Email Address"style="width:75%">
+              </div>
+              <div class="form-input">
+                <h1 class="modal__title">Name:</h1>
+                <p class="modal__subtitle">Enter your name below.</p>
+                <input type="name" class="form__item-textarea" id="InputName" placeholder="Name"style="width:75%">
+              </div>
+  
+              <div class="form-input">
+                <h1 class="modal__title">Country:</h1>
+                <select class="form__item-textarea" id="InputCountry"style="width:75%">
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Åland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia, Plurinational State of</option>
+                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, the Democratic Republic of the</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Côte d'Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curaçao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and McDonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia, Federated States of</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Réunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthélemy</option>
+                    <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin (French part)</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten (Dutch part)</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TW">Taiwan, Province of China</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela, Bolivarian Republic of</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.S.</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+              </div>
+
+              <div class="form-input">
+                <h1 class="modal__title">Subject:</h1>
+                <p class="modal__subtitle">Please enter the reason and message you want to get in contact with me.</p>
+                <textarea class="form__item-textarea" name="message" id="InputMessage" rows="5"style="min-width:90%"></textarea>
+              </div>
+  
+            <button type="submit" onclick="sendEmail" class="button-contact-me">Submit</button>
+          </div>
+        </form>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+        
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="contact-me-introduction">
+      <div class="text-container"data-aos="fade-left">
+        <h2>Contact Me -</h2>
+        <h1>Get In Touch.</h1>
+        <p>Here you can send me your details to get in touch with you, please provide clear details and a message for me to recieve, thank you.</p>
+        <p>I should get in contact within the next few days depending on how busy I am, please be patient.</p>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+<footer>
+  <div class="footer-main-container">
+
+    <div class="footer-link-container">
+      <ul>
+        <li><h4>SITE LINKS</h4></li>
+        <li><a class="footer" href="#home-anchorpoint">Home</a></li>
+        <li><a class="footer" href="#aboutme-anchorpoint">About Me</a></li>
+        <li><a class="footer" href="#projects-anchorpoint">Projects</a></li>
+        <li><a class="footer" href="#updatelog-anchorpoint">Update Log</a></li>
+        <li><a class="footer" href="#contactme-anchorpoint">Contact Me</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-link-container">
+      <ul>
+        <li><h4>SOCIALS</h4></li>
+        <li><a class="footer" href="https://github.com/ItzProvi">Github</a></li>
+        <li><a class="footer" href="https://www.linkedin.com/in/lewis-lendon-1baa01202/">LinkedIn</a></li>
+        <li><a class="footer" href="index.html">Twitter</a></li>
+        <li><a class="footer" href="index.html">Youtube</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-link-container">
+      <ul>
+        <li><h4>SITE PARTNERS</h4>
+        <li><a class="footer" href="index.html">N/A</a>
+        <li><a class="footer" href="index.html">N/A</a>
+        <li><a class="footer" href="index.html">N/A</a>
+        <li><a class="footer" href="index.html">N/A</a>
+      </ul>
+    </div>
+
+    <div class="footer-link-container">
+      <ul>
+        <li><h4>LEGAL</h4></li>
+        <li><a class="footer" href="index.html">Terms & Conditions</a></li>
+        <li><a class="footer" href="index.html">Cookie Policy</a></li>
+        <li><a class="footer" href="index.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="credits-container">
+    <div class="credits">
+      <p>Lewis Lendon | Web Developer © - Copyright 2022 - Rights Reserved</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+<!--END of the Body of the page-->
