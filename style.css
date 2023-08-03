@@ -196,7 +196,8 @@ a.footer:active {color: none;}
 
 .navbar-main-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
@@ -206,6 +207,26 @@ a.footer:active {color: none;}
   padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.navbar-counters {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+#clock{
+  color: var(--text-colour);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 @media only screen and (max-width: 680px) {
@@ -641,7 +662,7 @@ dialog {
 
 .about-me-main-container {
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background-color: var(--secondary-color);
 }
 
@@ -649,7 +670,8 @@ dialog {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 1000px;
+  height: 100%;
+  min-height: 1000px;
   max-width: 1440px;
   box-sizing: border-box;
   margin: auto;
@@ -657,14 +679,37 @@ dialog {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 1250px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about-me-text-container {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .about-me-text-container {
+    width: 100%;
+  }
+}
+
 .about-me-banners-container {
   width: 50%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
   gap: 2rem;
-  padding: 5rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  .about-me-banners-container {
+    width: 100%;
+  }
 }
 
 .banner {
@@ -673,13 +718,13 @@ dialog {
   align-items: center;
   width: 6rem;
   height: 6rem;
-  border: 2px solid var(--brand-color);
   font-size: 3rem;
   transition: ease-in 0.25s;
 }
 
 .banner:hover {
   color: var(--brand-color);
+  scale: 1.1;
 }
 
 .projects-main-container {
@@ -1043,6 +1088,7 @@ dialog {
   height: auto;
   background-color: var(--secondary-color);
   border-radius: 6px;
+  padding: 20px;
 }
 
 
@@ -1066,7 +1112,7 @@ dialog {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 75%;
   padding: 16px;
   background-color: var(--secondary-color);
   margin-left: auto;
@@ -1077,12 +1123,13 @@ dialog {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
   gap: 20px;
 }
 
 .form-input {
   height: auto;
-  width: 600px;
+  width: 85%;
   border-radius: 8px;
   background-color: var(--secondary-color);
 }
