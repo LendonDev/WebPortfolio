@@ -2,8 +2,8 @@ jQuery(document).ready(function ($) {
 
 window.onload = function initiate_load_anim() {
   setInterval(function(){
-    document.getElementById("loaderanim1").style.marginTop="-100vh";
-    document.getElementById("loaderanim2").style.marginTop="-100vh";
+    document.getElementById("loaderanim1").style.marginTop="-105vh";
+    document.getElementById("loaderanim2").style.marginTop="-105vh";
 }, 250);
 }
 
@@ -67,4 +67,11 @@ function sendEmail(){
   message => alert(message)
 )
 }
+
+
+
+
+
+
+
 });
