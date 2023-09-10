@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
@@ -143,6 +143,8 @@ a.footer:active {color: none;}
   position: fixed;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
   background-color: var(--brand-color);
   z-index: 999;
   transition: 0.6s ease-in-out;
@@ -152,6 +154,8 @@ a.footer:active {color: none;}
   position: fixed;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
   background-color: var(--secondary-color);
   border-bottom: 4rem solid var(--primary-color);
   z-index: 998;
@@ -332,7 +336,7 @@ dialog {
 .modal__title {
   margin: 0;
   font-size: 1.75rem;
-  line-height: none;
+  line-height: 40px;
   color: var(--brand-color);
 }
 
@@ -407,7 +411,8 @@ dialog {
 
 .modal-close:hover {
   cursor: pointer;
-  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  color: var(--brand-color);
 }
 
 .modal-body {
@@ -444,13 +449,14 @@ dialog {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  transition-property: background-color;
+  transition: ease-in-out;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.7, 0.3, 0.3, 1);
 }
 
 .button-modal:hover {
-  background-color: var(--brand-color);
+  color: var(--brand-color);
+  border-color: var(--brand-color);
 }
 
 
@@ -528,12 +534,12 @@ dialog {
   display: flex;
   flex-direction: column;
   width: 50%;
-  min-height: 500px;
-  max-height: 1000px;
+  height: 100%;
   font-family: 'Poppins';
   font-size: 140px;
   line-height: 140px;
   font-weight: 600;
+  padding: 20px;
 }
 
 @media (max-width: 820px) {
@@ -562,8 +568,20 @@ dialog {
   }
 }
 
+@media (max-width: 420px) {
+  .social-links-container {
+    font-size: 2px;
+    padding: 0;
+  }
+
+  .social-link {
+    width: 25vw;
+  }
+}
+
 .social-link {
-  width: 100px;
+  max-width: 100px;
+  min-width: 80px;
   height: 80px;
   font-size: 24px;
   display: flex;
@@ -581,8 +599,7 @@ dialog {
   flex-direction: column;
   align-items: flex-end;
   width: 50%;
-  min-height: 500px;
-  max-height: 1000px;
+  height: 100%;
 }
 
 @media (max-width: 820px) {
@@ -603,6 +620,9 @@ dialog {
 
 .intro-statistics-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 40px;
   height: auto;
   width: auto;
   margin-top: 14px;
@@ -610,6 +630,7 @@ dialog {
 
 .intro-statistic {
   text-align: left;
+  height: auto;
 }
 
 .button-contact-me {
@@ -668,10 +689,11 @@ dialog {
 
 .about-me-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
   min-height: 1000px;
+  max-height: 2000px;
   max-width: 1440px;
   box-sizing: border-box;
   margin: auto;
@@ -682,26 +704,27 @@ dialog {
 @media only screen and (max-width: 1250px) {
   .about-me-container {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
 
 .about-me-text-container {
+  display: flex;
   width: 50%;
 }
 
 @media only screen and (max-width: 1250px) {
   .about-me-text-container {
     width: 100%;
+    justify-content: center;
   }
 }
 
 .about-me-banners-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 50%;
   height: auto;
-  display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   padding-top: 2rem;
 }
@@ -769,7 +792,6 @@ dialog {
 @media only screen and (max-width: 1250px) {
   .projects-introduction {
     width: 100%;
-    margin-left: 0;
   }
 }
 
@@ -793,17 +815,19 @@ dialog {
 
 .project {
   display: flex;
+  flex-direction: column;
   max-width: 600px;
-  height: 150px;
+  height: 300px;
   border-radius: 8px;
-  margin-bottom: 16px;
+  border: 1px solid transparent;
+  margin: 16px;
   background-color: var(--secondary-color);
   transition: 0.3s ease-in-out;
 }
 
 .project:hover {
-  background-color:var(--brand-color);
   opacity:0.8;
+  scale: 0.98;
 }
 
 .project-image {
@@ -811,7 +835,7 @@ dialog {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 150px;
+  width: 100%;
   background-color: var(--third-color)
 }
 
@@ -937,6 +961,7 @@ dialog {
     min-width: 86.21%;
   }
 }
+
 .update-log-legend {
   display: flex;
   justify-content: center;
@@ -1074,14 +1099,20 @@ dialog {
   gap: 2rem;
   width: 50%;
   height: 100%;
-  padding: 20px;
 }
 
 @media only screen and (max-width: 1250px) {
   .contact-me-main-display-container {
+    min-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-me-main-display-container {
     width: 100%;
   }
 }
+
 
 .contact-me-main-display {
   width: 100%;
@@ -1090,7 +1121,6 @@ dialog {
   border-radius: 6px;
   padding: 20px;
 }
-
 
 .contact-me-option {
   display: flex;
@@ -1105,7 +1135,6 @@ dialog {
   justify-content: center;
   align-items: center;
   width: 66px;
-  background-color: var(--secondary-color);
 }
 
 .contact-me-text-holder {
@@ -1114,7 +1143,6 @@ dialog {
   align-items: center;
   width: 75%;
   padding: 16px;
-  background-color: var(--secondary-color);
   margin-left: auto;
   margin-right: auto;
 }
@@ -1131,7 +1159,6 @@ dialog {
   height: auto;
   width: 85%;
   border-radius: 8px;
-  background-color: var(--secondary-color);
 }
 
 
@@ -1158,7 +1185,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-inline: auto;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 2rem;
   max-width: 90rem;
   height: auto;
@@ -1173,7 +1200,7 @@ footer {
 .footer-link-container {
   flex: 1 1 calc(20% - .5rem);
   width: auto;
-  height: 300px;
+  height: auto;
   padding: 20px;
 }
 
@@ -1184,8 +1211,7 @@ footer {
 
 .credits {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   max-width: 1440px;
@@ -1196,6 +1222,12 @@ footer {
   padding: 20px;
   border-top: var(--third-color) 2px solid;
   text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .credits {
+    flex-direction: column;
+  }
 }
 
 li {
